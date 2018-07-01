@@ -1,21 +1,8 @@
-/*Base Styles*/
-main {
-    margin-bottom: auto;
-    position: relative;
-}
-form {
-    height: 100%;
-    position: relative;
-    background-color: transparent;
-    font-family: 'Bitter', serif;
-    font-size: 1rem;
-}
-
 body {
 	width: 100wh;
 	height: 90vh;
 	color: #fff;
-	background: linear-gradient(-45deg, rgb(214, 20, 20), rgb(149, 143, 146), rgb(0, 0, 0), rgb(50, 230, 176));
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -57,4 +44,3 @@ body {
 		background-position: 0% 50%
 	}
 }
-

@@ -22,7 +22,7 @@ app.get('/style.css', function(req, res){
   res.sendfile(__dirname + '/index.css');
 });
 
-app.get('/main.js', function(req, res){
+app.get('/index.js', function(req, res){
   res.sendfile(__dirname + '/index.js');
 });
 
