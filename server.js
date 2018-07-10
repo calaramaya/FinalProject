@@ -1,28 +1,15 @@
 var express = require('express');
 
-var bodyParser = require('body-parser');
-
-var path = require('path');
-
 var app = express();
-var port = process.env.PORT || 3000;
-app.listen(port, "0.0.0.0", function() {
-console.log("Listening on Port 3000");
+
+app.get('/',function(req,res){
+	
+	res.send('What do I do with this shit!!??');
+
 });
 
-app.use(bodyParser.urlencoded({ extended: true }));
-
-app.use(bodyParser.json());
-
-app.get("/", function(req, res) {
-    res.sendfile(__dirname + '/index.html');
+app.listen(3003,function(){
+	console.log('App listening on port 3003!');
 });
 
-app.get('/style.css', function(req, res){
-  res.sendfile(__dirname + '/index.css');
-});
-
-app.get('/index.js', function(req, res){
-  res.sendfile(__dirname + '/index.js');
-});
-
+app.use('/public', express.static(__dirname + '/public'));
